@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="9dp">
+
+        <ImageView
+            android:id="@+id/iv_clothing"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:scaleType="centerCrop"
+            android:background="@color/light_gray"
+            android:contentDescription="Clothing item" />
+
+        <TextView
+            android:id="@+id/tv_clothing_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clothing Item"
+            android:textColor="@color/text_black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_clothing_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textColor="@color/soft_brown"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

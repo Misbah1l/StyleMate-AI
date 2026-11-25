@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY COLLECTION"
+            android:textColor="@color/soft_brown"
+            android:textSize="12sp"
+            android:letterSpacing="0.18"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Wardrobe"
+            android:textColor="@color/text_black"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organize your style, one piece at a time."
+            android:textColor="@color/dark_brown"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/logo_background"
+            android:padding="22dp"
+            android:layout_marginTop="32dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_total_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Items"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:background="@color/beige"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add_clothing"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="+  ADD CLOTHING"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:letterSpacing="0.08"
+            android:backgroundTint="@color/dark_brown"
+            android:layout_marginTop="28dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textColor="@color/text_black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="35dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:minWidth="100dp"
+                    android:text="All"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/dark_brown"/>
+
+                <Button
+                    android:id="@+id/btn_tops"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Tops"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark_brown"
+                    android:backgroundTint="@color/beige"/>
+
+                <Button
+                    android:id="@+id/btn_bottoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Bottoms"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark_brown"
+                    android:backgroundTint="@color/beige"/>
+
+                <Button
+                    android:id="@+id/btn_dresses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Dresses"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark_brown"
+                    android:backgroundTint="@color/beige"/>
+
+                <Button
+                    android:id="@+id/btn_shoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Shoes"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark_brown"
+                    android:backgroundTint="@color/beige"/>
+
+                <Button
+                    android:id="@+id/btn_accessories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Accessories"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark_brown"
+                    android:backgroundTint="@color/beige"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Clothing Collection"
+            android:textColor="@color/text_black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/et_search_wardrobe"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/soft_brown"
+            android:background="@drawable/logo_background"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:hint="Search clothing or category..."
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/soft_brown"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:inputType="text"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_empty_wardrobe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your wardrobe is waiting for its first piece."
+            android:textColor="@color/soft_brown"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:padding="25dp"
+            android:visibility="visible"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_wardrobe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
